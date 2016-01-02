@@ -1,0 +1,13 @@
+# SpiritCrew
+A Wurm server side mod for Ago's launcher wich add a spell to bind spirits to boats to speed them up (also a shameless ripoff of BagOfHolding by Ago)
+
+"Oooh man ... Daa boat is too slow! Let's get some ancestors to help and row."
+
+This mod is aimed at soloers ans small population servers. It adds a spell named spiritcrew to every religion.
+This spell can be cast on boats to add an enchant ( I used the id for opulence as i dont think we will be able to eat ships soon).
+The enchant virtually fills passengers seats the same way rare ships does codewise (1 seat per 10 power of enchantment).
+
+To achive this, I modified the method calculateNewBoatSpeed wich is called in Creature.sendData. Probably not a good thing.
+It is also called in Player.disembark but I think it is way less problematic.
+
+First attempt at coding since almost 10 years.
